@@ -41,6 +41,18 @@ main {
     font-weight: bold;
 }
 
+.text-gold {
+    color: var(--gold-color);
+}
+
+.text-silver {
+    color: var(--silver-color);
+}
+
+.text-bronze {
+    color: var(--bronze-color);
+}
+
 .form-control {
     background-color: var(--main-color-dark);
     color: var(--text-color);
