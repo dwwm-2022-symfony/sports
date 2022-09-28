@@ -29,4 +29,25 @@ class HomeController extends AbstractController
         return $this->render('integrated/team/details.html.twig', [
         ]);
     }
+
+    #[Route('/teams/new', name: 'app_teams_new')]
+    public function teamNew(): Response
+    {
+        return $this->render('integrated/team/new.html.twig', [
+        ]);
+    }
+
+    #[Route('/teams/edit', name: 'app_teams_edit')]
+    public function teamEdit(): Response
+    {
+        return $this->render('integrated/team/edit.html.twig', [
+        ]);
+    }
+
+    #[Route('/sports', name: 'app_sport_index')]
+    public function sports(): Response
+    {
+        return $this->render('integrated/sport/index.html.twig', [
+        ]);
+    }
 }

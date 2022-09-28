@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Édition équipe{% endblock %}
+
+{% block main_class %}teams-edit{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="row g-3">
+                <div class="col-12">
+                    <form class="box-shadow border-radius p-3" id="newTeamForm">
+                        <div class="my-2">
+                            <label for="name" class="form-label">Nom de l'équipe :</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="my-2">
+                            <label for="shortname" class="form-label">Diminutif de l'équipe :</label>
+                            <input type="text" class="form-control" id="shortname">
+                        </div>
+                        <p class="my-2">Sport :</p>
+                        <div class="d-flex">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="sport" id="hockey">
+                                <label class="form-check-label" for="hockey">
+                                    Hockey
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="sport" id="boxe">
+                                <label class="form-check-label" for="boxe">
+                                    Boxe
+                                </label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="sport" id="rugby">
+                                <label class="form-check-label" for="rugby">
+                                    Rugby
+                                </label>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <label for="members" class="form-label">Joueurs de l'équipe :</label>
+                            <input type="text" class="form-control" id="members">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12">
+                    <div class="py-4 px-3 box-shadow border-radius">
+                        <button type="submit" form="newTeamForm" class="solid-btn me-3">VALIDER</button>
+                        <a href="#" class="solid-btn danger me-3">ANNULER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

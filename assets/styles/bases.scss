@@ -56,6 +56,10 @@ main {
     }
 }
 
+.form-label {
+    font-weight: bold;
+}
+
 .form-check-input:checked {
     background-color: var(--main-color-dark);
     border-color: var(--main-color-dark);
