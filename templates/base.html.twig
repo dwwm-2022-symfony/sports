@@ -12,11 +12,13 @@
     <body>
         {% block body %}
             {% block header %}
+                {% include('partials/_header.html.twig') %}
             {% endblock %}
             <main class="{% block main_class %}{% endblock %}">
                 {% block main %}{% endblock %}
             </main>
             {% block footer %}
+                {% include('partials/_footer.html.twig') %}
             {% endblock %}
         {% endblock %}
 
