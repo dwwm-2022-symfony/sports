@@ -50,4 +50,25 @@ class HomeController extends AbstractController
         return $this->render('integrated/sport/index.html.twig', [
         ]);
     }
+
+    #[Route('/sports/details', name: 'app_sport_details')]
+    public function sportsDetails(): Response
+    {
+        return $this->render('integrated/sport/details.html.twig', [
+        ]);
+    }
+
+    #[Route('/login', name: 'app_login')]
+    public function login(): Response
+    {
+        return $this->render('integrated/login.html.twig', [
+        ]);
+    }
+
+    #[Route('/register', name: 'app_register')]
+    public function register(): Response
+    {
+        return $this->render('integrated/register.html.twig', [
+        ]);
+    }
 }
