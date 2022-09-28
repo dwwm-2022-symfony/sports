@@ -20,7 +20,13 @@ class HomeController extends AbstractController
     public function teams(): Response
     {
         return $this->render('integrated/team/index.html.twig', [
-            'controller_name' => 'HomeController',
+        ]);
+    }
+
+    #[Route('/teams/details', name: 'app_teams_details')]
+    public function teamDetails(): Response
+    {
+        return $this->render('integrated/team/details.html.twig', [
         ]);
     }
 }

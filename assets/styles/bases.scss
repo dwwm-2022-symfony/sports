@@ -36,7 +36,7 @@ main {
     border-radius: 1rem;
 }
 
-.page-title {
+.title {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -68,17 +68,30 @@ main {
 }
 
 .solid-btn {
-    padding: 0.2rem 2.3rem;
+    padding: 0.35rem 2.3rem;
     color: var(--main-color);
     background-color: var(--text-color);
     border-radius: 1rem;
     font-size: 1rem;
     font-weight: bold;
     border: 1px solid var(--text-color);
+    text-decoration: none;
 
     &:hover {
         background-color: var(--silver-color);
         border-color: var(--silver-color);
+        color: var(--main-color);
+    }
+
+    &.danger {
+        background-color: var(--danger-color);
+        border: 1px solid var(--danger-color);
+
+        &:hover {
+            background-color: var(--danger-color-dark);
+            border-color: var(--danger-color-dark);
+            color: var(--main-color);
+        }
     }
 }
 
