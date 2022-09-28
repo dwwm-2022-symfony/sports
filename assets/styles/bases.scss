@@ -1,0 +1,29 @@
+html,
+body {
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: var(--text-color);
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
+
+main {
+    flex-grow: 1;
+}
+

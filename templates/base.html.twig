@@ -8,12 +8,20 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% block header %}
+            {% endblock %}
+            <main class="{% block main_class %}{% endblock %}">
+                {% block main %}{% endblock %}
+            </main>
+            {% block footer %}
+            {% endblock %}
+        {% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
     </body>
 </html>
